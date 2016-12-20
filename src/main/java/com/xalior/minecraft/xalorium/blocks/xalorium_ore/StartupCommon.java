@@ -5,6 +5,7 @@ package com.xalior.minecraft.xalorium.blocks.xalorium_ore;
  */
 
 import net.minecraft.item.ItemBlock;
+
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class StartupCommon
@@ -26,8 +27,14 @@ public class StartupCommon
         //  |  stationary_water  +       water          |
         //  +--------------------+----------------------+
         //
-        blockXaloriumOre = (BlockXaloriumOre)(new BlockXaloriumOre().setUnlocalizedName("block_xalorium_ore"));
+        blockXaloriumOre = (BlockXaloriumOre)(new BlockXaloriumOre().setUnlocalizedName("Xalorium Ore"));
         blockXaloriumOre.setRegistryName("block_xalorium_ore");
+
+        final int IRON_HARVEST_LEVEL = 2;
+        final float STONE_HARDNESS = 10F;
+        blockXaloriumOre.setHardness(STONE_HARDNESS);
+        blockXaloriumOre.setHarvestLevel("pickaxe", IRON_HARVEST_LEVEL); // can also set in the constructor if desired
+
         GameRegistry.register(blockXaloriumOre);
 
         // We also need to create and register an ItemBlock for this block otherwise it won't appear in the inventory

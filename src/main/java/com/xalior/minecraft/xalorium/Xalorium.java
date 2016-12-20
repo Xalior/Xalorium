@@ -50,11 +50,16 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
  */
 
-@Mod(modid = Xalorium.MODID, version = Xalorium.VERSION)
+@Mod(modid = Xalorium.MODID, version = Xalorium.VERSION, name = Xalorium.NAME)
 public class Xalorium
 {
     public static final String MODID = "xalorium";
+    public static final String NAME = "Xalorium";
     public static final String VERSION = "0.1";
+
+    @Mod.Instance(MODID)
+    public static Xalorium instance;
+
 
     // Says where the client and server 'proxy' code is loaded.
     @SidedProxy(clientSide="com.xalior.minecraft.xalorium.ClientOnlyProxy",

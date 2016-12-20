@@ -28,6 +28,7 @@ public class ClientOnlyProxy extends CommonProxy
         //read config first
 //        mbe70_configuration.StartupClientOnly.preInitClientOnly();
 
+        com.xalior.minecraft.xalorium.items.xalorium_dust.StartupClientOnly.preInitClientOnly();
         com.xalior.minecraft.xalorium.blocks.xalorium_ore.StartupClientOnly.preInitClientOnly();
     }
 
@@ -42,6 +43,7 @@ public class ClientOnlyProxy extends CommonProxy
         //read config first
 //        minecraftbyexample.mbe70_configuration.StartupClientOnly.initClientOnly();
 
+        com.xalior.minecraft.xalorium.items.xalorium_dust.StartupClientOnly.initClientOnly();
         com.xalior.minecraft.xalorium.blocks.xalorium_ore.StartupClientOnly.initClientOnly();
     }
 
@@ -54,6 +56,7 @@ public class ClientOnlyProxy extends CommonProxy
         //read config first
 //        minecraftbyexample.mbe70_configuration.StartupClientOnly.postInitClientOnly();
 
+        com.xalior.minecraft.xalorium.items.xalorium_dust.StartupClientOnly.postInitClientOnly();
         com.xalior.minecraft.xalorium.blocks.xalorium_ore.StartupClientOnly.postInitClientOnly();
     }
 
