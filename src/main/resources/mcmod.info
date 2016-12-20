@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "${archivesBaseName}",
+  "name": "Xalorium",
+  "description": "Mystical Xalorium. No-one is strictly sure how it got here, and where its uses end, it seems that you can use it for just about anything, if you try hard enough...",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["Xalior", "Essk"],
+  "credits": "D. Rimron-Soutter & S. Rimron-Soutter",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
