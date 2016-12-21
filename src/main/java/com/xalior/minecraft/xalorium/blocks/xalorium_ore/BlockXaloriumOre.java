@@ -70,7 +70,7 @@ public class BlockXaloriumOre extends Block {
      */
     public int quantityDroppedWithBonus(int fortune, Random random)
     {
-        return this.quantityDropped(random) + random.nextInt(fortune + 1);
+        return this.quantityDropped(random) + (fortune);
     }
 
     /**
@@ -78,7 +78,7 @@ public class BlockXaloriumOre extends Block {
      */
     public int quantityDropped(Random random)
     {
-        return 4 + random.nextInt(2);
+        return 1;
     }
 
     /**

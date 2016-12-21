@@ -60,7 +60,6 @@ public class Xalorium
     @Mod.Instance(MODID)
     public static Xalorium instance;
 
-
     // Says where the client and server 'proxy' code is loaded.
     @SidedProxy(clientSide="com.xalior.minecraft.xalorium.ClientOnlyProxy",
             serverSide="com.xalior.minecraft.xalorium.DedicatedServerProxy")
@@ -94,4 +93,5 @@ public class Xalorium
     public static String prependModID(String name) {
         return MODID + ":" + name;
     }
+
 }

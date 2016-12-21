@@ -16,6 +16,7 @@ public class StartupCommon
         itemXaloriumDust.setRegistryName("item_xalorium_dust");
 
         GameRegistry.register(itemXaloriumDust);
+        GameRegistry.registerFuelHandler(itemXaloriumDust);  // See IFuelHandler&getBurnTime in itemXaloriumDust.java
     }
 
     public static void initCommon()

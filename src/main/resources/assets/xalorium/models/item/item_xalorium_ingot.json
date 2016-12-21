@@ -1,0 +1,6 @@
+{
+  "parent":"xalorium:item/base",
+  "textures": {
+    "layer0":"xalorium:items/xaloriumIngot"
+  }
+}

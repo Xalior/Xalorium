@@ -5,6 +5,7 @@ package com.xalior.minecraft.xalorium;
  */
 
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 /**
  * CommonProxy is used to set up the mod and start it running.  It contains all the code that should run on both the
@@ -23,6 +24,7 @@ public abstract class CommonProxy {
 
         com.xalior.minecraft.xalorium.items.xalorium_dust.StartupCommon.preInitCommon();
         com.xalior.minecraft.xalorium.blocks.xalorium_ore.StartupCommon.preInitCommon();
+        com.xalior.minecraft.xalorium.items.xalorium_ingot.StartupCommon.preInitCommon();
     }
 
     /**
@@ -36,6 +38,12 @@ public abstract class CommonProxy {
 
         com.xalior.minecraft.xalorium.items.xalorium_dust.StartupCommon.initCommon();
         com.xalior.minecraft.xalorium.blocks.xalorium_ore.StartupCommon.initCommon();
+        com.xalior.minecraft.xalorium.items.xalorium_ingot.StartupCommon.initCommon();
+
+        // and some we have enough setup to do some worldgen...
+
+
+        GameRegistry.registerWorldGenerator(new WorldGen(), 0);
     }
 
     /**
@@ -48,6 +56,7 @@ public abstract class CommonProxy {
 
         com.xalior.minecraft.xalorium.items.xalorium_dust.StartupCommon.postInitCommon();
         com.xalior.minecraft.xalorium.blocks.xalorium_ore.StartupCommon.postInitCommon();
+        com.xalior.minecraft.xalorium.items.xalorium_ingot.StartupCommon.initCommon();
     }
 
     // helper to determine whether the given player is in creative mode

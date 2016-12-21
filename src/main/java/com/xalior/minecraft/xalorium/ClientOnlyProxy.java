@@ -30,6 +30,7 @@ public class ClientOnlyProxy extends CommonProxy
 
         com.xalior.minecraft.xalorium.items.xalorium_dust.StartupClientOnly.preInitClientOnly();
         com.xalior.minecraft.xalorium.blocks.xalorium_ore.StartupClientOnly.preInitClientOnly();
+        com.xalior.minecraft.xalorium.items.xalorium_ingot.StartupClientOnly.preInitClientOnly();
     }
 
     /**
@@ -45,6 +46,8 @@ public class ClientOnlyProxy extends CommonProxy
 
         com.xalior.minecraft.xalorium.items.xalorium_dust.StartupClientOnly.initClientOnly();
         com.xalior.minecraft.xalorium.blocks.xalorium_ore.StartupClientOnly.initClientOnly();
+        com.xalior.minecraft.xalorium.items.xalorium_ingot.StartupClientOnly.initClientOnly();
+
     }
 
     /**
@@ -58,6 +61,8 @@ public class ClientOnlyProxy extends CommonProxy
 
         com.xalior.minecraft.xalorium.items.xalorium_dust.StartupClientOnly.postInitClientOnly();
         com.xalior.minecraft.xalorium.blocks.xalorium_ore.StartupClientOnly.postInitClientOnly();
+        com.xalior.minecraft.xalorium.items.xalorium_ingot.StartupClientOnly.postInitClientOnly();
+
     }
 
     // helper to determine whether the given player is in creative mode
