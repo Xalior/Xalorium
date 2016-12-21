@@ -1,5 +1,7 @@
 package com.xalior.minecraft.xalorium;
 
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -64,6 +66,12 @@ public class Xalorium
     @SidedProxy(clientSide="com.xalior.minecraft.xalorium.ClientOnlyProxy",
             serverSide="com.xalior.minecraft.xalorium.DedicatedServerProxy")
     public static CommonProxy proxy;
+
+    public static final CreativeTabs tabXalorium = new CreativeTabs("Xalorium") {
+        @Override public Item getTabIconItem() {
+            return (Item)com.xalior.minecraft.xalorium.blocks.xalorium_ore.StartupCommon.itemBlockXaloriumOre;
+        }
+    };
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)

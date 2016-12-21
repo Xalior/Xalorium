@@ -4,11 +4,11 @@
 package com.xalior.minecraft.xalorium.blocks.xalorium_ore;
 
 
+import com.xalior.minecraft.xalorium.Xalorium;
 import com.xalior.minecraft.xalorium.items.xalorium_dust.StartupCommon;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -27,7 +27,7 @@ public class BlockXaloriumOre extends Block {
 
     public BlockXaloriumOre() {
         super(Material.ROCK);
-        setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+        setCreativeTab(Xalorium.tabXalorium);
     }
 
     // the block will render in the TRANSLUCENT layer, because we are alpha-seethru...

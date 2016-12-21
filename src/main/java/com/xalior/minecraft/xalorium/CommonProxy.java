@@ -22,6 +22,8 @@ public abstract class CommonProxy {
         //read config first
 //        mbe70_configuration.StartupCommon.preInitCommon();
 
+
+
         com.xalior.minecraft.xalorium.items.xalorium_dust.StartupCommon.preInitCommon();
         com.xalior.minecraft.xalorium.blocks.xalorium_ore.StartupCommon.preInitCommon();
         com.xalior.minecraft.xalorium.items.xalorium_ingot.StartupCommon.preInitCommon();

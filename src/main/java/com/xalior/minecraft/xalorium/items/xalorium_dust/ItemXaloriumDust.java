@@ -1,6 +1,6 @@
 package com.xalior.minecraft.xalorium.items.xalorium_dust;
 
-import net.minecraft.creativetab.CreativeTabs;
+import com.xalior.minecraft.xalorium.Xalorium;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.IFuelHandler;
@@ -11,7 +11,7 @@ import net.minecraftforge.fml.common.IFuelHandler;
 public class ItemXaloriumDust extends Item implements IFuelHandler{
 
     public ItemXaloriumDust() {
-        setCreativeTab(CreativeTabs.MATERIALS);
+        setCreativeTab(Xalorium.tabXalorium);
     }
 
     public int getBurnTime(ItemStack fuel) {

@@ -1,6 +1,6 @@
 package com.xalior.minecraft.xalorium.items.xalorium_ingot;
 
-import net.minecraft.creativetab.CreativeTabs;
+import com.xalior.minecraft.xalorium.Xalorium;
 import net.minecraft.item.Item;
 
 /**
@@ -9,7 +9,8 @@ import net.minecraft.item.Item;
 public class ItemXaloriumIngot extends Item {
 
     public ItemXaloriumIngot() {
-        setCreativeTab(CreativeTabs.MATERIALS);
+
+        setCreativeTab(Xalorium.tabXalorium);
     }
 
 }
