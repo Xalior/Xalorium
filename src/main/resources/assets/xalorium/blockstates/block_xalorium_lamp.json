@@ -1,0 +1,21 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "xalorium:block_xalorium_lamp",
+    "textures": {
+      "txt": "xalorium:blocks/xaloriumLamp"
+    }
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}],
+    "lit": {
+      "false": {},
+      "true": {
+        "textures": {
+          "txt": "xalorium:blocks/xaloriumLamp_ON"
+        }
+      }
+    }
+  }
+}
