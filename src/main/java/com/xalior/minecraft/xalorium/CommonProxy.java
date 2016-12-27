@@ -27,6 +27,8 @@ public abstract class CommonProxy {
         com.xalior.minecraft.xalorium.items.xalorium_dust.StartupCommon.preInitCommon();
         com.xalior.minecraft.xalorium.blocks.xalorium_ore.StartupCommon.preInitCommon();
         com.xalior.minecraft.xalorium.items.xalorium_ingot.StartupCommon.preInitCommon();
+        com.xalior.minecraft.xalorium.blocks.xalorium_lamp.StartupCommon.preInitCommon();
+        com.xalior.minecraft.xalorium.blocks.packing_crate.StartupCommon.preInitCommon();
     }
 
     /**
@@ -41,6 +43,8 @@ public abstract class CommonProxy {
         com.xalior.minecraft.xalorium.items.xalorium_dust.StartupCommon.initCommon();
         com.xalior.minecraft.xalorium.blocks.xalorium_ore.StartupCommon.initCommon();
         com.xalior.minecraft.xalorium.items.xalorium_ingot.StartupCommon.initCommon();
+        com.xalior.minecraft.xalorium.blocks.xalorium_lamp.StartupCommon.initCommon();
+        com.xalior.minecraft.xalorium.blocks.packing_crate.StartupCommon.initCommon();
 
         // and some we have enough setup to do some worldgen...
 
@@ -58,7 +62,9 @@ public abstract class CommonProxy {
 
         com.xalior.minecraft.xalorium.items.xalorium_dust.StartupCommon.postInitCommon();
         com.xalior.minecraft.xalorium.blocks.xalorium_ore.StartupCommon.postInitCommon();
-        com.xalior.minecraft.xalorium.items.xalorium_ingot.StartupCommon.initCommon();
+        com.xalior.minecraft.xalorium.items.xalorium_ingot.StartupCommon.postInitCommon();
+        com.xalior.minecraft.xalorium.blocks.xalorium_lamp.StartupCommon.postInitCommon();
+        com.xalior.minecraft.xalorium.blocks.packing_crate.StartupCommon.postInitCommon();
     }
 
     // helper to determine whether the given player is in creative mode

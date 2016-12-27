@@ -4,6 +4,7 @@
 package com.xalior.minecraft.xalorium.blocks.packing_crate;
 
 
+import com.xalior.minecraft.xalorium.Xalorium;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -17,7 +18,7 @@ public class BlockPackingCrate extends Block {
 
     public BlockPackingCrate() {
         super(Material.ROCK);
-        setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+        setCreativeTab(Xalorium.tabXalorium);
     }
 
     // the block will render in the TRANSLUCENT layer, because we are alpha-seethru...
